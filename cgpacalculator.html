@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Semester Wise CGPA Calculator: Calculate Your CGPA Accurately | Toolsl</title>
+
+  <meta name="description" content="Use our Semester Wise CGPA Calculator to calculate your cumulative CGPA from multiple semesters. Learn how semester GPA, credits, and cumulative CGPA are calculated.">
+
+  <meta name="keywords" content="semester wise CGPA calculator, CGPA calculator, semester GPA calculator, cumulative CGPA calculator, calculate CGPA, CGPA calculation, GPA to CGPA calculator, university CGPA calculator, diploma CGPA calculator">
+
+  <meta name="robots" content="index, follow">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="canonical" href="https://toolsl.netlify.app/cgpacalculator.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Semester Wise CGPA Calculator: Calculate Your CGPA Accurately | Toolsl">
+  <meta property="og:description" content="Calculate your cumulative CGPA from semester-wise GPA and credits with this simple online guide and calculator.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://toolsl.netlify.app/cgpacalculator.html">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f5f7fa;
+      color: #222;
+      font-family: Arial, "Noto Sans Bengali", sans-serif;
+      line-height: 1.7;
+    }
+
+    .article-container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 28px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 3px 16px rgba(0,0,0,0.08);
+    }
+
+    .breadcrumb {
+      margin-bottom: 20px;
+      color: #666;
+      font-size: 14px;
+    }
+
+    h1 {
+      font-size: 36px;
+      line-height: 1.3;
+      margin-bottom: 18px;
+    }
+
+    h2 {
+      margin-top: 38px;
+      font-size: 28px;
+      line-height: 1.35;
+    }
+
+    h3 {
+      margin-top: 26px;
+      font-size: 21px;
+    }
+
+    p {
+      font-size: 17px;
+    }
+
+    ul,
+    ol {
+      padding-left: 27px;
+    }
+
+    li {
+      margin-bottom: 9px;
+    }
+
+    .tool-button {
+      display: inline-block;
+      margin: 20px 0;
+      padding: 13px 24px;
+      background: #2563eb;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 7px;
+      font-weight: bold;
+    }
+
+    .tool-button:hover {
+      opacity: 0.9;
+    }
+
+    .info-box {
+      background: #f1f5f9;
+      border-left: 4px solid #2563eb;
+      padding: 18px;
+      margin: 22px 0;
+      border-radius: 6px;
+    }
+
+    .warning-box {
+      background: #fff7ed;
+      border-left: 4px solid #f97316;
+      padding: 18px;
+      margin: 22px 0;
+      border-radius: 6px;
+    }
+
+    .formula {
+      background: #f8f9fa;
+      padding: 20px;
+      margin: 22px 0;
+      border-radius: 8px;
+      text-align: center;
+      font-size: 19px;
+      font-weight: bold;
+    }
+
+    .example-box {
+      background: #f8fafc;
+      padding: 20px;
+      margin: 22px 0;
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+    }
+
+    .faq-item {
+      margin-bottom: 26px;
+    }
+
+    @media (max-width: 600px) {
+
+      .article-container {
+        margin: 10px;
+        padding: 18px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      h2 {
+        font-size: 23px;
+      }
+
+      h3 {
+        font-size: 19px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      .formula {
+        font-size: 17px;
+      }
+    }
+  </style>
+
+  <!-- Article Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Semester Wise CGPA Calculator: Calculate Your CGPA Accurately",
+    "description": "A complete guide to calculating cumulative CGPA from semester-wise GPA and credits.",
+    "author": {
+      "@type": "Organization",
+      "name": "Toolsl"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Toolsl"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://toolsl.netlify.app/cgpacalculator.html"
+    }
+  }
+  </script>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a Semester Wise CGPA Calculator?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A Semester Wise CGPA Calculator is an online tool that helps calculate cumulative CGPA from GPA results across multiple semesters."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is CGPA calculated from semester GPA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "When semesters have different credit loads, cumulative CGPA is generally calculated using the total grade points divided by the total credits."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I calculate CGPA without credits?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A simple average of semester GPAs can be used only when the semesters have equal weighting. If credit loads differ, credits should normally be included for an accurate cumulative calculation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can students use this CGPA calculator for university results?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Students can use a semester-wise CGPA calculator as a calculation aid, but the official grading and CGPA rules of their institution should always be followed."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can diploma students calculate semester-wise CGPA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Diploma students can calculate cumulative results using the grading and weighting rules applicable to their institution or academic board."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is the calculated CGPA an official result?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. An online calculator is a calculation aid. The official CGPA is determined by the relevant university, board, or institution according to its official rules."
+        }
+      }
+    ]
+  }
+  </script>
+
+</head>
+
+<body>
+
+  <main class="article-container">
+
+    <div class="breadcrumb">
+      Home → Education Tools → Semester Wise CGPA Calculator
+    </div>
+
+    <h1>
+      Semester Wise CGPA Calculator: Calculate Your CGPA Accurately
+    </h1>
+
+    <p>
+      Calculating your overall CGPA can become confusing when you have
+      different GPA results across several semesters. Instead of manually
+      adding numbers and trying to remember the correct formula, a
+      <strong>Semester Wise CGPA Calculator</strong> can make the process
+      much easier.
+    </p>
+
+    <p>
+      This guide explains what semester GPA and cumulative CGPA mean, how
+      CGPA is calculated from multiple semesters, why credits are important,
+      and how students can calculate their overall academic performance
+      accurately.
+    </p>
+
+    <a href="index.html#gpa" class="tool-button">
+      Use CGPA Calculator
+    </a>
+
+    <h2>What Is a Semester Wise CGPA Calculator?</h2>
+
+    <p>
+      A <strong>Semester Wise CGPA Calculator</strong> is an online tool
+      designed to calculate a student's cumulative grade point average from
+      results obtained in multiple semesters.
+    </p>
+
+    <p>
+      For example, if a student has completed several semesters and knows the
+      GPA achieved in each semester, the calculator can help estimate the
+      overall CGPA using the applicable academic calculation method.
+    </p>
+
+    <div class="info-box">
+      <strong>In simple words:</strong> Semester GPA tells you how you
+      performed in a particular semester, while cumulative CGPA represents
+      your overall academic performance across the included semesters.
+    </div>
+
+    <h2>What Is GPA?</h2>
+
+    <p>
+      <strong>GPA</strong> stands for <strong>Grade Point Average</strong>.
+      It represents the average grade-point performance for a particular
+      semester, term, or academic period.
+    </p>
+
+    <p>
+      For example, a student may have different GPAs in different semesters:
+    </p>
+
+    <ul>
+      <li>Semester 1 GPA: 3.20</li>
+      <li>Semester 2 GPA: 3.45</li>
+      <li>Semester 3 GPA: 3.60</li>
+      <li>Semester 4 GPA: 3.30</li>
+    </ul>
+
+    <p>
+      These semester results can then contribute to the student's cumulative
+      CGPA according to the institution's grading and credit rules.
+    </p>
+
+    <h2>What Is CGPA?</h2>
+
+    <p>
+      <strong>CGPA</strong> stands for <strong>Cumulative Grade Point
+      Average</strong>. Unlike a semester GPA, which normally represents one
+      academic period, CGPA represents cumulative academic performance over
+      multiple semesters or courses.
+    </p>
+
+    <p>
+      The exact calculation method can differ between universities,
+      institutions, and academic programs. Therefore, students should always
+      check the official grading policy applicable to their program.
+    </p>
+
+    <h2>Semester GPA vs CGPA</h2>
+
+    <div class="example-box">
+
+      <h3>Semester GPA</h3>
+
+      <p>
+        Represents performance during one semester or academic term.
+      </p>
+
+      <h3>CGPA</h3>
+
+      <p>
+        Represents cumulative performance across multiple semesters or
+        courses.
+      </p>
+
+    </div>
+
+    <p>
+      For example, you might receive a GPA of 3.50 in your fifth semester,
+      but your overall CGPA could be 3.32 after combining all previous
+      semesters.
+    </p>
+
+    <h2>How Is Semester Wise CGPA Calculated?</h2>
+
+    <p>
+      When semester credit loads are different, simply adding all semester
+      GPAs and dividing by the number of semesters may not give the correct
+      cumulative CGPA.
+    </p>
+
+    <p>
+      A commonly used credit-weighted calculation is based on total grade
+      points divided by total credits.
+    </p>
+
+    <div class="formula">
+      CGPA = Total Quality Points ÷ Total Credits
+    </div>
+
+    <p>
+      For each semester, the quality points can generally be calculated as:
+    </p>
+
+    <div class="formula">
+      Semester Quality Points = GPA × Semester Credits
+    </div>
+
+    <p>
+      The exact method should always follow the grading policy of your
+      university or academic institution.
+    </p>
+
+    <h2>Example of Semester Wise CGPA Calculation</h2>
+
+    <p>
+      Suppose a student has the following semester results:
+    </p>
+
+    <div class="example-box">
+
+      <p><strong>Semester 1:</strong> GPA 3.20, Credits 15</p>
+
+      <p><strong>Semester 2:</strong> GPA 3.40, Credits 18</p>
+
+      <p><strong>Semester 3:</strong> GPA 3.60, Credits 16</p>
+
+    </div>
+
+    <p>
+      First, calculate the quality points for each semester:
+    </p>
+
+    <ul>
+      <li>Semester 1: 3.20 × 15 = 48.00</li>
+      <li>Semester 2: 3.40 × 18 = 61.20</li>
+      <li>Semester 3: 3.60 × 16 = 57.60</li>
+    </ul>
+
+    <p>
+      Total quality points:
+    </p>
+
+    <div class="formula">
+      48.00 + 61.20 + 57.60 = 166.80
+    </div>
+
+    <p>
+      Total credits:
+    </p>
+
+    <div class="formula">
+      15 + 18 + 16 = 49
+    </div>
+
+    <p>
+      Therefore:
+    </p>
+
+    <div class="formula">
+      CGPA = 166.80 ÷ 49 ≈ 3.40
+    </div>
+
+    <p>
+      So the credit-weighted cumulative CGPA in this example is approximately
+      <strong>3.40</strong>.
+    </p>
+
+    <h2>Why Are Credits Important?</h2>
+
+    <p>
+      Credits are important because not every semester or course necessarily
+      carries the same academic weight.
+    </p>
+
+    <p>
+      If one semester contains significantly more credits than another,
+      treating both semester GPAs as equally weighted may produce a different
+      result from the institution's official CGPA calculation.
+    </p>
+
+    <p>
+      That is why a credit-weighted method is commonly used in academic
+      systems where courses have different credit values.
+    </p>
+
+    <h2>Can You Calculate CGPA Without Credits?</h2>
+
+    <p>
+      If every semester has exactly the same weighting, a simple average of
+      semester GPAs may produce the same result as a weighted calculation.
+    </p>
+
+    <div class="formula">
+      Simple Average = (GPA₁ + GPA₂ + GPA₃ + ... ) ÷ Number of Semesters
+    </div>
+
+    <p>
+      However, if semester credit loads are different, a simple average may
+      not represent the official cumulative CGPA.
+    </p>
+
+    <div class="warning-box">
+      <strong>Important:</strong> Do not assume that adding semester GPAs and
+      dividing by the number of semesters is always the official CGPA
+      formula. Check your institution's rules.
+    </div>
+
+    <h2>How to Calculate CGPA From All Semesters</h2>
+
+    <p>
+      If you want to calculate your cumulative CGPA after several semesters,
+      collect your semester results and the corresponding credits if your
+      academic system uses credit weighting.
+    </p>
+
+    <ol>
+      <li>Collect your GPA for each completed semester.</li>
+      <li>Record the credits associated with each semester.</li>
+      <li>Calculate GPA × credits for each semester.</li>
+      <li>Add all quality points.</li>
+      <li>Add all credits.</li>
+      <li>Divide total quality points by total credits.</li>
+      <li>Round the result according to your institution's rules.</li>
+    </ol>
+
+    <h2>Semester Wise CGPA Calculator for University Students</h2>
+
+    <p>
+      University students often need CGPA calculations for academic
+      planning, scholarship applications, internships, graduate programs,
+      and personal progress tracking.
+    </p>
+
+    <p>
+      Since universities can use different grading scales and credit
+      structures, students should enter values according to their own
+      institution's system.
+    </p>
+
+    <h3>Common University Grading Scale</h3>
+
+    <p>
+      Many institutions use a 4.00 grading scale, but the exact grade-point
+      mapping can differ. Some institutions may use different grading
+      policies, credit rules, or rounding methods.
+    </p>
+
+    <p>
+      Always use your institution's official grading scale when converting
+      marks or letter grades into GPA.
+    </p>
+
+    <h2>Semester Wise CGPA Calculator for Diploma Students</h2>
+
+    <p>
+      Diploma students can also need cumulative GPA or CGPA calculations
+      across multiple semesters. However, the calculation method depends on
+      the applicable board, curriculum, grading system, and official
+      academic rules.
+    </p>
+
+    <p>
+      If your diploma program uses a specific semester weighting system,
+      enter the values according to that official method rather than using a
+      generic university formula.
+    </p>
+
+    <a href="index.html#gpa" class="tool-button">
+      Calculate Your GPA / CGPA
+    </a>
+
+    <h2>How to Calculate CGPA From GPA?</h2>
+
+    <p>
+      If you already know your semester GPAs, you may be able to calculate
+      cumulative CGPA without converting every individual course grade again.
+      However, whether this is possible depends on the available semester
+      credit information and your institution's calculation rules.
+    </p>
+
+    <p>
+      When all semesters have equal weight, the average of the semester GPAs
+      may be sufficient. When weights differ, use the appropriate weighted
+      calculation.
+    </p>
+
+    <h2>CGPA Calculation With Different Credit Hours</h2>
+
+    <p>
+      Consider two semesters:
+    </p>
+
+    <div class="example-box">
+
+      <p>
+        <strong>Semester 1:</strong> GPA = 3.00, Credits = 12
+      </p>
+
+      <p>
+        <strong>Semester 2:</strong> GPA = 3.80, Credits = 24
+      </p>
+
+    </div>
+
+    <p>
+      A simple average would be:
+    </p>
+
+    <div class="formula">
+      (3.00 + 3.80) ÷ 2 = 3.40
+    </div>
+
+    <p>
+      But the credit-weighted calculation would be:
+    </p>
+
+    <div class="formula">
+      (3.00 × 12 + 3.80 × 24) ÷ (12 + 24)
+    </div>
+
+    <div class="formula">
+      = 3.53
+    </div>
+
+    <p>
+      The two results are different because the second semester has twice as
+      many credits.
+    </p>
+
+    <h2>Why Your Manual CGPA May Be Different</h2>
+
+    <p>
+      If your manually calculated CGPA does not match your official result,
+      there can be several reasons.
+    </p>
+
+    <ul>
+      <li>Different course credit values</li>
+      <li>Repeated or improved courses</li>
+      <li>Institution-specific grade replacement rules</li>
+      <li>Different rounding rules</li>
+      <li>Excluded or included courses</li>
+      <li>Different semester weighting methods</li>
+      <li>Grade conversion differences</li>
+    </ul>
+
+    <p>
+      Therefore, an online calculator should be treated as a calculation aid,
+      not as a replacement for your official academic transcript.
+    </p>
+
+    <h2>How Accurate Is an Online CGPA Calculator?</h2>
+
+    <p>
+      A calculator can perform the mathematical operation accurately when the
+      correct values and formula are provided. However, the result can still
+      be different from your official CGPA if the institution uses a
+      different calculation method.
+    </p>
+
+    <p>
+      For the most accurate result, use the official grading rules of your
+      university, college, board, or diploma program.
+    </p>
+
+    <h2>How to Improve Your CGPA</h2>
+
+    <p>
+      A semester-wise calculator can also help students understand how future
+      semester results may affect their cumulative performance.
+    </p>
+
+    <ul>
+      <li>Track your GPA after every semester.</li>
+      <li>Identify subjects where you lose grade points.</li>
+      <li>Give additional attention to high-credit courses.</li>
+      <li>Plan your study schedule before examinations.</li>
+      <li>Set realistic GPA targets for upcoming semesters.</li>
+      <li>Review your academic progress regularly.</li>
+    </ul>
+
+    <h2>CGPA and GPA: Which One Is More Important?</h2>
+
+    <p>
+      Both can be useful, but they describe different things.
+    </p>
+
+    <p>
+      <strong>GPA</strong> shows your performance during a specific semester,
+      while <strong>CGPA</strong> provides a broader view of your cumulative
+      academic performance.
+    </p>
+
+    <p>
+      Universities, employers, scholarship programs, and other organizations
+      may use GPA or CGPA depending on their requirements.
+    </p>
+
+    <h2>Tips for Using a CGPA Calculator</h2>
+
+    <ol>
+      <li>Enter the GPA exactly as shown in your academic record.</li>
+      <li>Double-check every credit value.</li>
+      <li>Use the correct grading scale.</li>
+      <li>Do not mix percentage and GPA values incorrectly.</li>
+      <li>Check your institution's official calculation policy.</li>
+      <li>Compare the result with your transcript when possible.</li>
+    </ol>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+
+      <h3>What is a Semester Wise CGPA Calculator?</h3>
+
+      <p>
+        It is an online tool that helps students calculate cumulative CGPA
+        using GPA results from multiple semesters and, when applicable,
+        semester credit information.
+      </p>
+
+    </div>
+
+    <div class="faq-item">
+
+      <h3>How is CGPA calculated from semester GPA?</h3>
+
+      <p>
+        When semesters have different credit loads, a credit-weighted
+        calculation is commonly used:
+        total quality points divided by total credits.
+      </p>
+
+    </div>
+
+    <div class="faq-item">
+
+      <h3>Can I calculate CGPA without credits?</h3>
+
+      <p>
+        If all semesters have equal weighting, a simple average may be
+        appropriate. If credit loads differ, credits should normally be
+        considered for a weighted calculation.
+      </p>
+
+    </div>
+
+    <div class="faq-item">
+
+      <h3>Can university students use this CGPA calculator?</h3>
+
+      <p>
+        Yes. University students can use a semester-wise calculator as a
+        calculation aid, but the official university grading and CGPA rules
+        should always be followed.
+      </p>
+
+    </div>
+
+    <div class="faq-item">
+
+      <h3>Can diploma students calculate semester-wise CGPA?</h3>
+
+      <p>
+        Yes. Diploma students can calculate cumulative academic performance
+        according to the grading and weighting rules applicable to their
+        program.
+      </p>
+
+    </div>
+
+    <div class="faq-item">
+
+      <h3>Is an online CGPA result official?</h3>
+
+      <p>
+        No. An online calculator provides a mathematical estimate based on
+        the information you enter. Your official CGPA is determined by your
+        academic institution.
+      </p>
+
+    </div>
+
+    <div class="faq-item">
+
+      <h3>Why is my calculated CGPA different from my transcript?</h3>
+
+      <p>
+        Differences can occur because of credit weighting, repeated courses,
+        grade replacement policies, excluded courses, rounding rules, or
+        other institution-specific policies.
+      </p>
+
+    </div>
+
+    <h2>Related Education Tools</h2>
+
+    <ul>
+
+      <li>
+        <a href="index.html#gpa">
+          GPA / CGPA Calculator
+        </a>
+      </li>
+
+      <li>
+        <a href="index.html#age">
+          Age Calculator
+        </a>
+      </li>
+
+      <li>
+        <a href="index.html#zakat">
+          Zakat Calculator
+        </a>
+      </li>
+
+      <li>
+        <a href="best-free-online-tools.html">
+          Best Free Online Tools
+        </a>
+      </li>
+
+    </ul>
+
+    <h2>Conclusion</h2>
+
+    <p>
+      A <strong>Semester Wise CGPA Calculator</strong> makes it easier to
+      understand your cumulative academic performance across multiple
+      semesters. By entering your semester GPA and, where required, the
+      corresponding credits, you can calculate an estimated cumulative CGPA
+      quickly.
+    </p>
+
+    <p>
+      Remember that different universities, colleges, diploma programs, and
+      academic boards may use different grading and calculation rules. For
+      that reason, always compare your calculated result with your
+      institution's official policy or transcript.
+    </p>
+
+    <p>
+      Ready to calculate your overall GPA or CGPA?
+    </p>
+
+    <a href="index.html#gpa" class="tool-button">
+      Calculate CGPA Now
+    </a>
+
+  </main>
+
+</body>
+</html>
